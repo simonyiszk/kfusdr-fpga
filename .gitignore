@@ -1,3 +1,4 @@
 workdir
 *.o
 *.ghw
+venv
