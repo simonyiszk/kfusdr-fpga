@@ -31,7 +31,7 @@ architecture rtl of uart is
   signal tx_fsm_state : tx_fsm_state_t;
   type rx_fsm_state_t is (rx_idle, rx_start_bit, rx_data_bits, rx_stop_bit, rx_done);
   signal rx_fsm_state : rx_fsm_state_t;
-  signal rx_filter    : std_logic_vector(CLK_PULSES_PER_BAUD / 2 downto 0);
+  signal rx_filter    : std_logic_vector(CLK_PULSES_PER_BAUD / 4 downto 0);
   signal rx_int       : std_logic;
   
 begin
